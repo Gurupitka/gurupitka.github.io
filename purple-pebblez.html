@@ -228,7 +228,7 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
     </div><!-- end footer-wrap -->
   </div>
 
-  <div class="nav mobile-nav"><ul class="wsite-menu-default">
+  <div class="nav mobile-nav"><ul id="menu" class="wsite-menu-default">
 	<li id="pg498380675482677261" class="wsite-menu-item-wrap has-submenu">
 		<a href="/" class="wsite-menu-item">
 			Main menu
@@ -434,7 +434,7 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 	(function(jQuery) {
 		try {
 			if (jQuery) {
-				$('.wsite-menu-default').on('mouseenter', function() { $('#wsite-menus > div > ul').show(); });
+				$('#menu').on('mouseenter', function() { $('#wsite-menus > div > ul').show(); });
 				$('.wsite-menu').mouseleave(function() { $('#wsite-menus > div > ul').hide(); } );
 				jQuery('div.blog-social div.fb-like').attr('class', 'blog-social-item blog-fb-like');
 				var $commentFrame = jQuery('#commentArea iframe');
