@@ -451,7 +451,7 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
 		try {
 			if (jQuery) {
 				$('.wsite-menu-default').on('mouseenter', function() { $('#wsite-menus > div > ul').show(); })
-				$('#wsite-menus > div > ul').on('mouseleave', function() { $('#wsite-menus > div > ul').hide(); })
+				$('.wsite-menu').on('mouseleave', function() { $('#wsite-menus > div > ul').hide(); })
 				jQuery('div.blog-social div.fb-like').attr('class', 'blog-social-item blog-fb-like');
 				var $commentFrame = jQuery('#commentArea iframe');
 				if ($commentFrame.length > 0) {
