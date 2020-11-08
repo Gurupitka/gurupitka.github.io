@@ -441,7 +441,7 @@ jQuery(document).ready(init);
 		try {
 			if (jQuery) {
 				$('.wsite-menu-default').on('mouseenter', function() { $('#wsite-menus > div > ul').show(); })
-				$('.wsite-menu').on('mouseleave', function() { $('#wsite-menus > div > ul').hide(); })
+				$('.wsite-menu').on('mouseout', function() { $('#wsite-menus > div > ul').hide(); })
 				jQuery('div.blog-social div.fb-like').attr('class', 'blog-social-item blog-fb-like');
 				var $commentFrame = jQuery('#commentArea iframe');
 				if ($commentFrame.length > 0) {
